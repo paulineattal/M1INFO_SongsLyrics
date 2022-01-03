@@ -11,6 +11,8 @@ Created on Fri Dec 24 17:55:50 2021
 from selenium import webdriver 
 import pandas as pd
 import time
+import pickle
+import re
 
 
 
@@ -68,7 +70,8 @@ for i in range(2,30):
     #modification de la chaine de caractere des paroles
     chaine_inutile = "Paroles de la chanson " + titre_chanson + " par " + auteur_chanson + " "
     paroles_chanson = paroles_chanson.replace(chaine_inutile,"")
-    paroles_chanson = paroles_chanson.replace('\n'," ")
+    paroles_chanson = paroles_chanson.replace('\n'," ")    
+    paroles_chanson = paroles_chanson.lower()
     
     
     #enregistrement des paroles, titre et auteur
@@ -81,27 +84,43 @@ for i in range(2,30):
     
 
 
+titre.append(auteur_chanson)
+auteur.append(auteur_chanson)
+paroles.append(paroles_chanson)
 
 df = {'Titre' : pd.Series(titre),
       'Auteur' : pd.Series(auteur),
       'Paroles' : pd.Series(paroles)
-       }
+       
+      }
 data = pd.DataFrame(df)
 print(data)
 
 
 #pickling 
-import pickle
-
 # Ouverture d'un fichier, puis écriture avec pickle
-with open("corpus.pkl", "wb") as f:
-    pickle.dump(data, f)
+with open("corpus.pkl", 'ab+') as f:
+    pickle.dump(data, f)    
 
-
-# Ouverture du fichier, puis lecture avec pickle
+#corpus = pd.DataFrame()
+print(corpus)
+#lecture avec pickle
+#boucle pour avoir tous les objets serialises pp
 with open("corpus.pkl", "rb") as f:
-    corpus = pickle.load(f)
+    while True:
+        try:
+            corpus = pd.concat([corpus, pickle.load(f)], axis = 0).reset_index(drop=True)
+        except EOFError:
+            break
+    
 
 print(corpus)
+
+
+
+
+
+
+
 
 
