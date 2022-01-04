@@ -1,0 +1,415 @@
+1641306090657	geckodriver	INFO	Listening on 127.0.0.1:52323
+1641306091680	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilexwiBfl"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1641306092539	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilexwiBfl/search.json.mozlz4", (void 0)))
+1641306094233	Marionette	INFO	Listening on port 39303
+1641306094463	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones, line 61: ReferenceError: optidigitalQueue is not defined
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-MTSPZV, line 35: uncaught exception: [object Object]
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones line 42 > injectedScript, line 2: TypeError: kind[0] is undefined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/4670181731308532952/index.html#t=9411133224691973614&p=https%3A%2F%2F6ed4d7bc4f293ea1cc9448596674e865.safeframe.googlesyndication.com, line 172: TypeError: studio.Enabler is undefined
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://z.moatads.com/allresponsemediaglobalftdisplay739160694092/moatad.js#moatClientLevel1=18966&moatClientLevel2=170420&moatClientLevel3=6126564&moatClientLevel4=3578085&moatClientSlicer1=18330, line 253: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 3998 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 2764 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641306115570	Marionette	INFO	Stopped listening on port 39303
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+[Parent 64422, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox-YTnrc5/firefox-95.0+build1/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641306116246	geckodriver	INFO	Listening on 127.0.0.1:36467
+1641306116252	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileZFzWxn"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1641306117029	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileZFzWxn/search.json.mozlz4", (void 0)))
+1641306118639	Marionette	INFO	Listening on port 37899
+1641306118696	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones, line 61: ReferenceError: optidigitalQueue is not defined
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-MTSPZV, line 35: uncaught exception: [object Object]
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones line 42 > injectedScript, line 2: TypeError: kind[0] is undefined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/4670181731308532952/index.html#t=843420844097066275&p=https%3A%2F%2F3b1e2f745a9770d2d7babbe5ee8d5db5.safeframe.googlesyndication.com, line 172: TypeError: studio.Enabler is undefined
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://z.moatads.com/allresponsemediaglobalftdisplay739160694092/moatad.js#moatClientLevel1=18966&moatClientLevel2=170420&moatClientLevel3=6126564&moatClientLevel4=3578085&moatClientSlicer1=18330, line 253: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 5879 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 3563 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641306134024	Marionette	INFO	Stopped listening on port 37899
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1641306134691	geckodriver	INFO	Listening on 127.0.0.1:34323
+1641306134696	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileElcyoy"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1641306135469	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileElcyoy/search.json.mozlz4", (void 0)))
+1641306137206	Marionette	INFO	Listening on port 35189
+1641306137318	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones, line 61: ReferenceError: optidigitalQueue is not defined
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-MTSPZV, line 35: uncaught exception: [object Object]
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones line 42 > injectedScript, line 2: TypeError: kind[0] is undefined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://z.moatads.com/allresponsemediaglobalftdisplay739160694092/moatad.js#moatClientLevel1=18966&moatClientLevel2=170754&moatClientLevel3=6183294&moatClientLevel4=3730368&moatClientSlicer1=18330, line 253: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: uncaught exception: 7
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 3875 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 2140 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 6761 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641306152391	Marionette	INFO	Stopped listening on port 35189
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641306153032	geckodriver	INFO	Listening on 127.0.0.1:58371
+1641306153038	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileumB6eV"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1641306153806	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileumB6eV/search.json.mozlz4", (void 0)))
+1641306155458	Marionette	INFO	Listening on port 44547
+1641306155560	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones, line 61: ReferenceError: optidigitalQueue is not defined
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-MTSPZV, line 35: uncaught exception: [object Object]
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones line 42 > injectedScript, line 2: TypeError: kind[0] is undefined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://z.moatads.com/allresponsemediaglobalftdisplay739160694092/moatad.js#moatClientLevel1=18966&moatClientLevel2=170754&moatClientLevel3=6183295&moatClientLevel4=3730369&moatClientSlicer1=18330, line 253: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: uncaught exception: 7
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 2414 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 3126 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 1885 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641306170379	Marionette	INFO	Stopped listening on port 44547
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641306171150	geckodriver	INFO	Listening on 127.0.0.1:40403
+1641306172172	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile9lrDa4"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1641306172976	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile9lrDa4/search.json.mozlz4", (void 0)))
+1641306174653	Marionette	INFO	Listening on port 34227
+1641306174725	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones, line 61: ReferenceError: optidigitalQueue is not defined
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-MTSPZV, line 35: uncaught exception: [object Object]
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones line 42 > injectedScript, line 2: TypeError: kind[0] is undefined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://z.moatads.com/allresponsemediaglobalftdisplay739160694092/moatad.js#moatClientLevel1=18966&moatClientLevel2=170420&moatClientLevel3=6126564&moatClientLevel4=3578085&moatClientSlicer1=18330, line 253: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 1908 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 1602 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641306190127	Marionette	INFO	Stopped listening on port 34227
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1641306190808	geckodriver	INFO	Listening on 127.0.0.1:44999
+1641306190818	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilehVnq5b"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1641306191593	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilehVnq5b/search.json.mozlz4", (void 0)))
+1641306193097	Marionette	INFO	Listening on port 39753
+1641306193196	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones, line 61: ReferenceError: optidigitalQueue is not defined
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-MTSPZV, line 35: uncaught exception: [object Object]
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones line 42 > injectedScript, line 2: TypeError: kind[0] is undefined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+1641306205795	Marionette	INFO	Stopped listening on port 39753
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641306206697	geckodriver	INFO	Listening on 127.0.0.1:55917
+1641306206703	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile1XMLD1"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1641306207477	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile1XMLD1/search.json.mozlz4", (void 0)))
+1641306209200	Marionette	INFO	Listening on port 40971
+1641306209256	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones, line 61: ReferenceError: optidigitalQueue is not defined
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-MTSPZV, line 35: uncaught exception: [object Object]
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones line 42 > injectedScript, line 2: TypeError: kind[0] is undefined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/14108831722956320463/index.html#t=181424619054057203&p=https%3A%2F%2F0c758739349d7ebfef79533a8a9b5560.safeframe.googlesyndication.com, line 172: TypeError: studio.Enabler is undefined
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://z.moatads.com/allresponsemediaglobalftdisplay739160694092/moatad.js#moatClientLevel1=18966&moatClientLevel2=170420&moatClientLevel3=6126588&moatClientLevel4=3578085&moatClientSlicer1=18330, line 253: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 1312 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 5985 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641306225322	Marionette	INFO	Stopped listening on port 40971
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641306523082	geckodriver	INFO	Listening on 127.0.0.1:54899
+1641306523090	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile8n0txL"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1641306523900	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile8n0txL/search.json.mozlz4", (void 0)))
+1641306525471	Marionette	INFO	Listening on port 44141
+1641306525528	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones, line 61: ReferenceError: optidigitalQueue is not defined
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-MTSPZV, line 35: uncaught exception: [object Object]
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones line 42 > injectedScript, line 2: TypeError: kind[0] is undefined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 2870 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://z.moatads.com/allresponsemediaglobalftdisplay739160694092/moatad.js#moatClientLevel1=18966&moatClientLevel2=170420&moatClientLevel3=6126564&moatClientLevel4=3578085&moatClientSlicer1=18330, line 253: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 682 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: uncaught exception: 7
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 7799 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641306542637	Marionette	INFO	Stopped listening on port 44141
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641306543303	geckodriver	INFO	Listening on 127.0.0.1:41617
+1641306544314	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileHw07Ui"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1641306545112	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileHw07Ui/search.json.mozlz4", (void 0)))
+1641306546516	Marionette	INFO	Listening on port 37107
+1641306546794	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones, line 61: ReferenceError: optidigitalQueue is not defined
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-MTSPZV, line 35: uncaught exception: [object Object]
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones line 42 > injectedScript, line 2: TypeError: kind[0] is undefined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+1641306557866	Marionette	INFO	Stopped listening on port 37107
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+[Parent 66991, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox-YTnrc5/firefox-95.0+build1/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641306558785	geckodriver	INFO	Listening on 127.0.0.1:36141
+1641306558791	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileEd7kFk"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1641306559568	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileEd7kFk/search.json.mozlz4", (void 0)))
+1641306561050	Marionette	INFO	Listening on port 35537
+1641306561559	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones, line 61: ReferenceError: optidigitalQueue is not defined
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-MTSPZV, line 35: uncaught exception: [object Object]
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones line 42 > injectedScript, line 2: TypeError: kind[0] is undefined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://z.moatads.com/allresponsemediaglobalftdisplay739160694092/moatad.js#moatClientLevel1=18966&moatClientLevel2=170420&moatClientLevel3=6126564&moatClientLevel4=3578085&moatClientSlicer1=18330, line 253: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 1873 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 1653 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 5993 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641306575695	Marionette	INFO	Stopped listening on port 35537
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641306576409	geckodriver	INFO	Listening on 127.0.0.1:48523
+1641306577420	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileKdsMtJ"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1641306578207	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileKdsMtJ/search.json.mozlz4", (void 0)))
+1641306579724	Marionette	INFO	Listening on port 42749
+1641306579845	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones, line 61: ReferenceError: optidigitalQueue is not defined
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-MTSPZV, line 35: uncaught exception: [object Object]
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones line 42 > injectedScript, line 2: TypeError: kind[0] is undefined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://z.moatads.com/allresponsemediaglobalftdisplay739160694092/moatad.js#moatClientLevel1=18966&moatClientLevel2=170420&moatClientLevel3=6126564&moatClientLevel4=3578085&moatClientSlicer1=18330, line 253: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 3312 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 2827 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 4244 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641306594499	Marionette	INFO	Stopped listening on port 42749
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641306595187	geckodriver	INFO	Listening on 127.0.0.1:35351
+1641306595197	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile6U2GdF"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1641306595978	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile6U2GdF/search.json.mozlz4", (void 0)))
+1641306597712	Marionette	INFO	Listening on port 43483
+1641306597832	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones, line 61: ReferenceError: optidigitalQueue is not defined
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-MTSPZV, line 35: uncaught exception: [object Object]
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones line 42 > injectedScript, line 2: TypeError: kind[0] is undefined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 3808 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://z.moatads.com/allresponsemediaglobalftdisplay739160694092/moatad.js#moatClientLevel1=18966&moatClientLevel2=170420&moatClientLevel3=6126564&moatClientLevel4=3578085&moatClientSlicer1=18330, line 253: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 2128 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641306612335	Marionette	INFO	Stopped listening on port 43483
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641306614896	geckodriver	INFO	Listening on 127.0.0.1:53367
+1641306614903	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilejU97sA"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1641306615669	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilejU97sA/search.json.mozlz4", (void 0)))
+1641306617349	Marionette	INFO	Listening on port 44601
+1641306617428	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones, line 61: ReferenceError: optidigitalQueue is not defined
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-MTSPZV, line 35: uncaught exception: [object Object]
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones line 42 > injectedScript, line 2: TypeError: kind[0] is undefined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://z.moatads.com/allresponsemediaglobalftdisplay739160694092/moatad.js#moatClientLevel1=18966&moatClientLevel2=170420&moatClientLevel3=6126564&moatClientLevel4=3578085&moatClientSlicer1=18330, line 253: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: uncaught exception: 7
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 2329 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 4 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 3078 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641306639251	Marionette	INFO	Stopped listening on port 44601
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641306639918	geckodriver	INFO	Listening on 127.0.0.1:51501
+1641306639924	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilevhsOhL"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1641306640715	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilevhsOhL/search.json.mozlz4", (void 0)))
+1641306642473	Marionette	INFO	Listening on port 33985
+1641306642554	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones, line 61: ReferenceError: optidigitalQueue is not defined
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-MTSPZV, line 35: uncaught exception: [object Object]
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones line 42 > injectedScript, line 2: TypeError: kind[0] is undefined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+1641306654603	Marionette	INFO	Stopped listening on port 33985
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+[Parent 68286, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox-YTnrc5/firefox-95.0+build1/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+1641306655486	geckodriver	INFO	Listening on 127.0.0.1:38517
+1641306656497	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileVC6R3N"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1641306657261	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileVC6R3N/search.json.mozlz4", (void 0)))
+1641306658976	Marionette	INFO	Listening on port 38669
+1641306659031	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones, line 61: ReferenceError: optidigitalQueue is not defined
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-MTSPZV, line 35: uncaught exception: [object Object]
+JavaScript error: https://www.paroles.net/les-plus-grands-succes-francophones line 42 > injectedScript, line 2: TypeError: kind[0] is undefined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+JavaScript error: https://notifpush.com/scripts/nadz-sdk.js, line 1: ReferenceError: Notification is not defined
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://z.moatads.com/allresponsemediaglobalftdisplay739160694092/moatad.js#moatClientLevel1=18966&moatClientLevel2=170420&moatClientLevel3=6126564&moatClientLevel4=3578085&moatClientSlicer1=18330, line 253: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 2498 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 7199 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641306674656	Marionette	INFO	Stopped listening on port 38669
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
