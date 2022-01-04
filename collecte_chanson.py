@@ -60,7 +60,7 @@ driver.close()
 
 
 
-for i in range(10,30):
+for i in range(1,30):
     #ouverture de la page
     profile = webdriver.FirefoxProfile()
     profile.set_preference("dom.webnotifications.enabled", False)
@@ -96,7 +96,7 @@ for i in range(10,30):
    
    
     #enregistrement des paroles, titre et auteur
-    titre.append(auteur_chanson)
+    titre.append(titre_chanson)
     auteur.append(auteur_chanson)
     paroles.append(paroles_chanson)
     #fermeture de la page
@@ -110,11 +110,42 @@ df = {'Titre' : pd.Series(titre),
        
       }
 data = pd.DataFrame(df)
+list_index = [10,16,17]
+data.drop(list_index , inplace=True)
+data = data.reset_index(drop=True)
+
+
+data_av = pd.read_csv('~/Documents/M1/algo avance/Projet/python_chanson/data.csv')
+data = pd.concat([data, data_av], axis = 0).reset_index(drop=True)
+
+
+data.to_csv('~/Documents/M1/algo avance/Projet/python_chanson/data.csv', index = False)
+
+
 
 
 #pickling
 # Ouverture d'un fichier, puis écriture avec pickle
-with open("corpus.pkl", 'ab+') as f:
-    pickle.dump(data, f)    
+
+with open("~/Documents/M1/algo avance/Projet/python_chanson/corpus_chanson.pkl", 'wb') as f: #ab+
+    pickle.dump(data, f)
 
 
+#recuperer les donnees
+corpus = pd.DataFrame()
+#lecture avec pickle
+#boucle pour avoir tous les objets serialises 
+with open("~/Documents/M1/algo avance/Projet/python_chanson/corpus_chanson.pkl", "rb") as f:
+    while True:
+        try:
+            corpus = pd.concat([corpus, pickle.load(f)], axis = 0).reset_index(drop=True)
+        except EOFError:
+            break
+
+print(corpus)
+
+corpus.to_csv('~/Documents/M1/algo avance/Projet/python_chanson/corpus.csv', index = False)
+
+ 
+ 
+ 
