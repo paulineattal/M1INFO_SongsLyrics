@@ -15,6 +15,15 @@ import matplotlib.pyplot as plt
 from imageio import imread
 from wordcloud import WordCloud
 
+import spacy
+
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.decomposition import LatentDirichletAllocation
+
+from graph_of_words import GraphOfWords
+import nltk
+
+
 
 #compter le nombre de mot dans un text
 #construire un type dict en faisant {mot1 : occ, mot2 : occ2, mot3 : occ3}
@@ -39,7 +48,7 @@ class graph :
             except EOFError:
                 break
 
-    
+    corpus = pd.read_csv("~/Documents/M1/algo avance/Projet/python_chanson/corpus.csv")
     list_chanson = corpus['Paroles graphes'].tolist()
 
 
@@ -83,9 +92,82 @@ class graph :
     texte = list_chanson[0]
     
     
+    
+    
+    
     with open("Stop-mots.txt", "r", encoding='utf8') as f:
         sm_french = [line.rstrip("\n") for line in f.readlines()]
+    sm_french = pd.read_csv("~/Documents/M1/algo avance/Projet/python_chanson/Stop-mots.txt", header=None)
+    sm_french = sm_french[0].tolist()
     
+    
+    
+
+    
+    nlp = spacy.load("fr_core_news_sm")
+    doc = nlp(texte)
+    text_list = []
+    head_list = []
+    for token in doc:
+        if token.is_alpha:
+            if not token.is_stop:
+                text_list.append(token.lemma_)
+                head_list.append(token.head.text.lower())
+    df = pd.DataFrame(list(zip(text_list, head_list)), 
+                   columns =['text', 'head'])
+    combos = df.groupby(['text','head']).size().reset_index().rename(columns={0:'count'}).sort_values('count', ascending=False)
+    
+    
+    
+    
+    
+    str_test = "amour aimer aime sexe dans le lit avec mon fiance et le mariage"
+    graph = GraphOfWords(window_size=2)
+    graph.build_graph(
+        'Roses are red. Violets are blue',
+        # OR a sentences list['Roses  are  red.', 'Violets are blue'],
+        remove_stopwords=False,
+        workers=4
+    )
+    graph.display_graph()
+    
+            
+            
+    
+    def display_topics(model, feature_names, no_top_words):
+        for topic_idx, topic in enumerate(model.components_):
+            print("Topic {}:".format(topic_idx))
+            str_words = " ".join([feature_names[i] for i in topic.argsort()[:-no_top_words - 1:-1]])
+            print(str_words)
+            
+            graph = GraphOfWords(window_size=2)
+            graph.build_graph(
+                str_words,
+                workers=4
+            )
+            graph.display_graph()
+            graph.write_graph_edges('edges_list.txt')
+               
+    
+    
+    
+    tf_vectorizer = CountVectorizer(max_df=0.95, min_df=2, max_features=1000, stop_words=sm_french)
+    tf=tf_vectorizer.fit_transform(list_chanson)
+    tf_feature_names = tf_vectorizer.get_feature_names()
+    # Créer le modèle LDA
+    lda = LatentDirichletAllocation(n_components=1, max_iter=5, learning_method='online', learning_offset=50., random_state=0)
+    lda.fit(tf)
+    #run function
+    display_topics(lda, tf_feature_names, 10)
+    
+    
+    
+    
+    
+    
+
+#########################################################
+#graphique en nuage de mot d'un texte
     
     # nombre de mots à afficher
     limit = 50
@@ -116,6 +198,8 @@ class graph :
     plt.title(title, color=fontcolor, size=30, y=1.01)
     plt.axis('off')
     plt.show()
+    
+###################################################3
     
     
     
