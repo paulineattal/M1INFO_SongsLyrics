@@ -177,7 +177,7 @@ class graph :
     wordcloud = WordCloud(
         max_words=limit,
         stopwords= sm_french, # liste de mots-outils
-        mask=imread('~/Documents/M1/algo avance/Projet/python_chanson/mask.png'),
+        mask=imread('~/OneDrive/Documents/Master1_Informatique/Algo/python_chanson/mask.png'),
         contour_width=3,
         background_color=bgcolor,
         #font_path=font
