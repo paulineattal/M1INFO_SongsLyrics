@@ -1,17 +1,27 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Jan  6 10:41:01 2022
-
-@author: pauline
-"""
 
 import numpy as np
 
 class Corpus :
+    
+    #classe qui recupere le dataframe des donnees deserialisees
+    #la collecte des donnees a ete fait au prealable avec Selenium
+    #le nettoyage des donnees a aussi ete fait lors de la collecte des donnees
+    
     def __init__(self, df) : 
         self.df = df
         
+    # Fonction qui renvoie le texte à afficher lorsqu'on tape repr(classe)
+    def __repr__(self):
+        return f"Dataframe : {self.df}"
+
+    # Fonction qui renvoie le texte à afficher lorsqu'on tape str(classe)
+    def __str__(self):
+        return f"PDataframe {self.df}"
+     
+    # def __str__(self):
+    #     return f"Paroles de la chanson {self.df['Titre']}, par {self.df['Auteur']}\n {self.df['Paroles originales']}"
         
     def get_similar_song(self, w, df, list_chanson, vectorizer):
         print("query:", w)
@@ -28,12 +38,12 @@ class Corpus :
         # Sort the values 
         sim_sorted = sorted(sim.items(), key=lambda x: x[1], reverse=True)
         # Print the articles and their similarity values
-        list_chanson_sel = []
+        list_indice_chanson_sel = []
         for k, v in sim_sorted:
             if v != 0.0:
                 print("valeur similaire :", v)
                 print(list_chanson[k])
-                list_chanson_sel.append(list_chanson[k])
+                list_indice_chanson_sel.append(k)
                 
-        return list_chanson_sel
+        return list_indice_chanson_sel
               

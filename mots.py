@@ -1,23 +1,29 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Sat Dec 25 18:45:10 2021
-
-@author: pauline
-"""
 
 import random
 import matplotlib.pyplot as plt
 from imageio import imread
 from wordcloud import WordCloud
-from graph_of_words import GraphOfWords
-
+from gensim import corpora
+from gensim.matutils import corpus2csc
+import numpy as np
+import networkx as nx
 
 
 class Graph :
-    def __init__(self, mots, titre):
+    def __init__(self, mots, titre, auteur):
         self.mots = mots
         self.titre = titre
+        self.auteur = auteur
+        
+    # Fonction qui renvoie le texte à afficher lorsqu'on tape repr(classe)
+    def __repr__(self):
+        return f"Titre de la chanson : {self.titre}\nAuteur de la chanson : {self.auteur}\nParoles de la chanson : {self.mots}"
+
+    # Fonction qui renvoie le texte à afficher lorsqu'on tape str(classe)
+    def __str__(self):
+        return f"{self.titre}, par {self.auteur}"
     
     def word_cloud(self, limit, sm_french) :
     
@@ -30,8 +36,7 @@ class Graph :
             stopwords= sm_french, # liste de mots-outils
             mask=imread('mask.png'),
             contour_width=3,
-            background_color=bgcolor,
-            #font_path=font
+            background_color=bgcolor
         ).generate(self.mots.lower()) 
             
         fig = plt.figure()
@@ -39,7 +44,7 @@ class Graph :
         fig.set_figwidth(14)
         fig.set_figheight(18)
         #titre de la figure
-        title = "Titre" #metre artiste et titre chanson
+        title = "chasnson : " + self.titre + " par " + self.auteur
         
         #changer couleurs du texte
         def couleur(*args, **kwargs):
@@ -52,49 +57,41 @@ class Graph :
 
 
     
-        
-    # nlp = spacy.load("fr_core_news_sm")
-    # doc = nlp(texte)
-    # text_list = []
-    # head_list = []
-    # for token in doc:
-    #     if token.is_alpha:
-    #         if not token.is_stop:
-    #             text_list.append(token.lemma_)
-    #             head_list.append(token.head.text.lower())
-    # df = pd.DataFrame(list(zip(text_list, head_list)), 
-    #                columns =['text', 'head'])
-    # combos = df.groupby(['text','head']).size().reset_index().rename(columns={0:'count'}).sort_values('count', ascending=False)
-    
-    
-    
-
-    
 class Clique(Graph) :
-    def __init__(self, mots, titre, nbMots):
-        super().__init__(mots=mots, titre=titre)
-        self.nbMots = nbMots  
+    def __init__(self, mots, titre, auteur, sous_mots):
+        super().__init__(mots=mots, titre=titre, auteur=auteur)
+        self.sous_mots = sous_mots
+        
+    # Fonction qui renvoie le texte à afficher lorsqu'on tape repr(classe)
+    def __repr__(self):
+        return f"Titre de la chanson : {self.titre}ntAuteur de la chanson : {self.auteur}\nParoles de la chanson : {self.mots}\nMots importants de la chanson : {self.sous_mots}"
+
+    # Fonction qui renvoie le texte à afficher lorsqu'on tape str(classe)
+    def __str__(self):
+        return f"{self.titre}, par {self.auteur}"
 
     
-    def display_topics(self, model, tf_feature_names):
-        for topic_idx, topic in enumerate(model.components_):
-            print("Topic {}:".format(topic_idx))
-            str_words = " ".join([tf_feature_names[i] for i in topic.argsort()[:-self.nbMots - 1:-1]])
+    def display_clique(self) :
+        #asser en parametre la liste de mots selectionnees par lda
+        
+        toks = [[tok for tok in self.mots.split() if tok in self.sous_mots]]
+        
+        dic = corpora.Dictionary(toks) # dictionnaire de tous les mots restant dans le token
+        dfm = [dic.doc2bow(tok) for tok in toks]    
+        term_matrice = corpus2csc(dfm)
+        # Transposée de la matrice pour établir les cooccurrences
+        term_matrice = np.dot(term_matrice, term_matrice.T)
+        
+        G = nx.from_scipy_sparse_matrix(term_matrice)
+        G.add_nodes = dic
+        pos=nx.spring_layout(G)  # position des nodes
+        dic.cfs.values()
             
-            graph = GraphOfWords(window_size=2)
-            graph.build_graph(
-                str_words,
-                workers=4
-            )
-            graph.display_graph()
-            graph.write_graph_edges('edges_list.txt')
-               
-    
-    
-    
-    
-    
-
-
-
-
+        nx.draw_networkx_nodes(G,pos, dic,
+                      node_color='r',
+                      node_size=500,
+                      alpha=0.8)
+        nx.draw_networkx_edges(G,pos,width=1.0,alpha=0.5)
+        nx.draw_networkx_labels(G,pos,dic,font_size=8)
+        #draw_networkx_nodes(G, pos[, nodelist, …])
+        plt.show()
