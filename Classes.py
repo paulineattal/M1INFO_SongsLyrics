@@ -2,13 +2,15 @@
 # -*- coding: utf-8 -*-
 
 import random
-import matplotlib.pyplot as plt
-from imageio import imread
-from wordcloud import WordCloud
+#pou rla manipulation des dictionnaires
 from gensim import corpora
 from gensim.matutils import corpus2csc
 import numpy as np
+#pour la creation des graphes
 import networkx as nx
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+from imageio import imread
 
 
 class Graph :
@@ -34,7 +36,7 @@ class Graph :
         wordcloud = WordCloud(
             max_words=limit,
             stopwords= sm_french, # liste de mots-outils
-            mask=imread('mask.png'),
+            mask=imread('img/mask.png'),
             contour_width=3,
             background_color=bgcolor
         ).generate(self.mots.lower()) 
