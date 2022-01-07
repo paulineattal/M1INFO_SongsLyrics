@@ -19,31 +19,27 @@ class Corpus :
     # Fonction qui renvoie le texte à afficher lorsqu'on tape str(classe)
     def __str__(self):
         return f"PDataframe {self.df}"
-     
-    # def __str__(self):
-    #     return f"Paroles de la chanson {self.df['Titre']}, par {self.df['Auteur']}\n {self.df['Paroles originales']}"
+        #return f"Paroles de la chanson {self.df['Titre']}, par {self.df['Auteur']}\n {self.df['Paroles originales']}"
         
     def get_similar_song(self, w, df, list_chanson, vectorizer):
-        print("query:", w)
-        print("Voici les articles avec les valeurs de similarité cosinus les plus élevées : ")
-        # Convert the query become a vector
+        print("Voici les chansons contanant le mot " + w + "affichées par ordre de pertinance : \n")
+        # Convertir le mot en vecteur
         w = [w]
-        q_vec = vectorizer.transform(w).toarray().reshape(df.shape[0],)
+        w_vec = vectorizer.transform(w).toarray().reshape(df.shape[0],)
         sim = {}
-        # Calculate the similarity
+        # Ccalcul de la similarite cosinus
         for i in range(10):
-            sim[i] = np.dot(df.loc[:, i].values, q_vec) / np.linalg.norm(df.loc[:, i]) * np.linalg.norm(q_vec)
-     
+            sim[i] = np.dot(df.loc[:, i].values, w_vec) / np.linalg.norm(df.loc[:, i]) * np.linalg.norm(w_vec)
       
-        # Sort the values 
+        # tri des valeurs 
         sim_sorted = sorted(sim.items(), key=lambda x: x[1], reverse=True)
-        # Print the articles and their similarity values
+        #stocke les indices du dataframe des chansons selectionnees
         list_indice_chanson_sel = []
+        #afficher les chanson par ordre de similarite
         for k, v in sim_sorted:
             if v != 0.0:
-                print("valeur similaire :", v)
                 print(list_chanson[k])
                 list_indice_chanson_sel.append(k)
-                
+        #liste des indices des chansons selectionnees
         return list_indice_chanson_sel
               

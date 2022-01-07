@@ -41,8 +41,8 @@ class Graph :
             
         fig = plt.figure()
         # taille de la figure
-        fig.set_figwidth(14)
-        fig.set_figheight(18)
+        fig.set_figwidth(5)
+        fig.set_figheight(5)
         #titre de la figure
         title = "chasnson : " + self.titre + " par " + self.auteur
         
@@ -51,9 +51,10 @@ class Graph :
             return "rgb(0, 100, {})".format(random.randint(100, 255))
         
         plt.imshow(wordcloud.recolor(color_func=couleur))
-        plt.title(title, color=fontcolor, size=30, y=1.01)
+        plt.title(title, color=fontcolor, size=10, y=1.01)
         plt.axis('off')
-        plt.show()
+        #plt.show()
+        return plt
 
 
     
@@ -70,6 +71,8 @@ class Clique(Graph) :
     def __str__(self):
         return f"{self.titre}, par {self.auteur}"
 
+    def get_sous_mots(self):
+        return self.sous_mots
     
     def display_clique(self) :
         #asser en parametre la liste de mots selectionnees par lda
@@ -82,6 +85,11 @@ class Clique(Graph) :
         # Transposée de la matrice pour établir les cooccurrences
         term_matrice = np.dot(term_matrice, term_matrice.T)
         
+        fig = plt.figure()
+        # taille de la figure
+        fig.set_figwidth(5)
+        fig.set_figheight(5)
+        
         G = nx.from_scipy_sparse_matrix(term_matrice)
         G.add_nodes = dic
         pos=nx.spring_layout(G)  # position des nodes
@@ -91,7 +99,11 @@ class Clique(Graph) :
                       node_color='r',
                       node_size=500,
                       alpha=0.8)
+        
+        
         nx.draw_networkx_edges(G,pos,width=1.0,alpha=0.5)
         nx.draw_networkx_labels(G,pos,dic,font_size=8)
-        #draw_networkx_nodes(G, pos[, nodelist, …])
-        plt.show()
+        
+        
+        
+        return plt
