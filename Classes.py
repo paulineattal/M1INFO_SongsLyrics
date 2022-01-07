@@ -25,9 +25,9 @@ class Graph :
     def __str__(self):
         return f"{self.titre}, par {self.auteur}"
     
+    #fonction qui construit un nuage de mots a l'aide de la librairie WordCloud
     def word_cloud(self, limit, sm_french) :
-    
-        #graphique en nuage de mot d'un texte
+        
         fontcolor = '#000000' #couleur de la police
         bgcolor = '#ffffff' # couleur de fond
             
@@ -38,7 +38,8 @@ class Graph :
             contour_width=3,
             background_color=bgcolor
         ).generate(self.mots.lower()) 
-            
+        
+        #sauvegarde dasn un pyplot
         fig = plt.figure()
         # taille de la figure
         fig.set_figwidth(5)
@@ -61,7 +62,7 @@ class Graph :
 class Clique(Graph) :
     def __init__(self, mots, titre, auteur, sous_mots):
         super().__init__(mots=mots, titre=titre, auteur=auteur)
-        self.sous_mots = sous_mots
+        self.sous_mots = sous_mots #cette nouvelle variable sera calcule a la'ide de la methode LDA 
         
     # Fonction qui renvoie le texte à afficher lorsqu'on tape repr(classe)
     def __repr__(self):
@@ -71,12 +72,12 @@ class Clique(Graph) :
     def __str__(self):
         return f"{self.titre}, par {self.auteur}"
 
+    # Fonction qui renvoie la variable sous_mots
     def get_sous_mots(self):
         return self.sous_mots
     
+    #fonction qui contruit un graphe de mot a l'aide la librairie networkx
     def display_clique(self) :
-        #asser en parametre la liste de mots selectionnees par lda
-        
         toks = [[tok for tok in self.mots.split() if tok in self.sous_mots]]
         
         dic = corpora.Dictionary(toks) # dictionnaire de tous les mots restant dans le token
@@ -85,6 +86,7 @@ class Clique(Graph) :
         # Transposée de la matrice pour établir les cooccurrences
         term_matrice = np.dot(term_matrice, term_matrice.T)
         
+        #sauvegarde dasn un pyplot
         fig = plt.figure()
         # taille de la figure
         fig.set_figwidth(5)
@@ -100,10 +102,7 @@ class Clique(Graph) :
                       node_size=500,
                       alpha=0.8)
         
-        
         nx.draw_networkx_edges(G,pos,width=1.0,alpha=0.5)
         nx.draw_networkx_labels(G,pos,dic,font_size=8)
-        
-        
-        
+    
         return plt

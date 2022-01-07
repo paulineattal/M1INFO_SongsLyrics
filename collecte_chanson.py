@@ -20,15 +20,14 @@ paroles_graph = []
 URL="https://www.paroles.net/les-plus-grands-succes-francophones"
 
 
-for i in range(18,31):
+for i in range(0,31):
     #ouverture de la page
     profile = webdriver.FirefoxProfile()
     profile.set_preference("dom.webnotifications.enabled", False)
     driver = webdriver.Firefox(firefox_profile=profile)
-    
-
     driver.get(URL)
     time.sleep(3)
+    
     #accepter les cookies (ne s'affiche pas forcement apres ouverture de plusieurs pages)
     accept_button = driver.find_elements_by_xpath("/html/body/div[6]/div[2]/div/div/div/div/div/div/div[2]/div[2]/button[2]/span")
     if len(accept_button) > 0 :
@@ -37,12 +36,13 @@ for i in range(18,31):
     if len(accept_button) > 0 :
         driver.find_element_by_xpath("/html/body/div[5]/div[2]/div/div/div/div/div/div/div[2]/div[2]/button[2]/span").click()
     #recuperer titre et auteur
-    time.sleep(3) # Wait for reviews to load
+    time.sleep(3)
     titre_chanson = driver.find_element_by_xpath('/html/body/div[2]/section/div/div/div/div[1]/div/div[2]/div/table/tbody/tr['+str(i)+']/td[1]/p/a').text
     auteur_chanson = driver.find_element_by_xpath('/html/body/div[2]/section/div/div/div/div[1]/div/div[2]/div/table/tbody/tr['+str(i)+']/td[2]/p/a').text
     chanson = driver.find_element_by_xpath('/html/body/div[2]/section/div/div/div/div[1]/div/div[2]/div/table/tbody/tr['+str(i)+']/td[1]/p/a')
     chanson.click()
-    time.sleep(3) # Wait for reviews to load
+    time.sleep(3)
+    #recuperer les paroles
     paroles_chanson_orig = driver.find_element_by_xpath('/html/body/div[2]/section/div/div/div/div[1]/div[3]/div[1]/div/div/div/div[5]/div/div/div[1]/div[2]').text
 
     #modification de la chaine de caractere des paroles
@@ -58,7 +58,7 @@ for i in range(18,31):
     paroles_chanson_graph = paroles_chanson_graph.replace("\'","")  #enlever les apostrophes
     paroles_chanson_graph = paroles_chanson_graph.replace("\"","")  #enlever les guillemets
 
-    #enregistrement des paroles, titre et auteur
+    #enregistrement des paroles, titre et auteur dasn des listes
     titre.append(titre_chanson)
     auteur.append(auteur_chanson)
     paroles_orig.append(paroles_chanson_orig)
@@ -66,7 +66,7 @@ for i in range(18,31):
     #fermeture de la page
     driver.close()
    
-
+#creation de dataframe a partir des listes
 df = {'Titre' : pd.Series(titre),
       'Auteur' : pd.Series(auteur),
       'Paroles originales' : pd.Series(paroles_orig),

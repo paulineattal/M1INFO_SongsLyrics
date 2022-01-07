@@ -4,7 +4,6 @@
 import numpy as np
 
 class Corpus :
-    
     #classe qui recupere le dataframe des donnees deserialisees
     #la collecte des donnees a ete fait au prealable avec Selenium
     #le nettoyage des donnees a aussi ete fait lors de la collecte des donnees
@@ -22,7 +21,7 @@ class Corpus :
         #return f"Paroles de la chanson {self.df['Titre']}, par {self.df['Auteur']}\n {self.df['Paroles originales']}"
         
     def get_similar_song(self, w, df, list_chanson, vectorizer):
-        print("Voici les chansons contanant le mot " + w + "affichées par ordre de pertinance : \n")
+        print("Voici les chansons contanant le mot " + w + " affichées par ordre de pertinance : \n")
         # Convertir le mot en vecteur
         w = [w]
         w_vec = vectorizer.transform(w).toarray().reshape(df.shape[0],)
