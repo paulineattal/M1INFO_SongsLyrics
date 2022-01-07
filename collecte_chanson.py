@@ -81,14 +81,14 @@ data.drop(list_index , inplace=True)
 data = data.reset_index(drop=True)
 
 #si un fichier de donnees a ete deja enregistrer, le recuperer et coller les donnees ensembles
-data_av = pd.read_csv('~/Documents/M1/algo avance/Projet/python_chanson/data.csv')
+data_av = pd.read_csv('datas/data.csv')
 data = pd.concat([data, data_av], axis = 0).reset_index(drop=True)
-data.to_csv('~/Documents/M1/algo avance/Projet/python_chanson/data.csv', index = False)
+data.to_csv('datas/data.csv', index = False)
 
 
 #pickling
 # Ouverture d'un fichier, puis écriture avec pickle
-with open("corpus_chanson.pkl", 'wb') as f: #ab+
+with open("datas/corpus_chanson.pkl", 'wb') as f: #ab+
     pickle.dump(data, f)
 
 
@@ -96,14 +96,14 @@ with open("corpus_chanson.pkl", 'wb') as f: #ab+
 corpus = pd.DataFrame()
 #lecture avec pickle
 #boucle pour avoir tous les objets serialises 
-with open("corpus_chanson.pkl", "rb") as f:
+with open("datas/corpus_chanson.pkl", "rb") as f:
     while True:
         try:
             corpus = pd.concat([corpus, pickle.load(f)], axis = 0).reset_index(drop=True)
         except EOFError:
             break
 #sauvegarder en csv 
-corpus.to_csv('~/Documents/M1/algo avance/Projet/python_chanson/corpus.csv', index = False)
+corpus.to_csv('datas/corpus.csv', index = False)
 
  
  

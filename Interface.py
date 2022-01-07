@@ -22,7 +22,7 @@ import os
 #creation de la fenetre de la barre de recherche
 window = tk.Tk()
 window.title('Trouve ta chanson')
-window.tk.call('wm', 'iconphoto', window._w, ImageTk.PhotoImage(file='icon.ico'))
+window.tk.call('wm', 'iconphoto', window._w, ImageTk.PhotoImage(file='img/icon.ico'))
 window.config(padx=10, pady=10)
 
 title_label = tk.Label(window, text = 'Entrez un mot a rechercher dans une chanson')
@@ -56,7 +56,7 @@ window.mainloop()
 #recuperation des donnees scrapees au prealable avec Selenium et serialise avec pickle
 df_corpus = pd.DataFrame()
 #lecture avec pickle pour avoir tous les objets serialises 
-with open("corpus_chanson.pkl", "rb") as f:
+with open("datas/corpus_chanson.pkl", "rb") as f:
     while True:
         try:
             df_corpus = pd.concat([df_corpus, pickle.load(f)], axis = 0).reset_index(drop=True)
@@ -64,7 +64,7 @@ with open("corpus_chanson.pkl", "rb") as f:
             break
 list_chanson = df_corpus['Paroles graphes'].tolist()
 #lecture du fichier des mots stop
-with open("Stop-mots.txt", "r", encoding='utf8') as f:
+with open("datas/Stop-mots.txt", "r", encoding='utf8') as f:
     sm_french = [line.rstrip("\n") for line in f.readlines()]
     
     
